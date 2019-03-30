@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E665232C224FC68D00F385BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665232B224FC68D00F385BD /* AppDelegate.swift */; };
+		E665232E224FC68D00F385BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665232D224FC68D00F385BD /* ViewController.swift */; };
+		E6652331224FC68D00F385BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E665232F224FC68D00F385BD /* Main.storyboard */; };
+		E6652333224FC69000F385BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6652332224FC69000F385BD /* Assets.xcassets */; };
+		E6652336224FC69000F385BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6652334224FC69000F385BD /* LaunchScreen.storyboard */; };
+		E6652341224FC69000F385BD /* LightLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6652340224FC69000F385BD /* LightLifeTests.swift */; };
+		E665234C224FC69000F385BD /* LightLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665234B224FC69000F385BD /* LightLifeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E665233D224FC69000F385BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6652320224FC68D00F385BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6652327224FC68D00F385BD;
+			remoteInfo = LightLife;
+		};
+		E6652348224FC69000F385BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6652320224FC68D00F385BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6652327224FC68D00F385BD;
+			remoteInfo = LightLife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6652328224FC68D00F385BD /* LightLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E665232B224FC68D00F385BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E665232D224FC68D00F385BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6652330224FC68D00F385BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6652332224FC69000F385BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6652335224FC69000F385BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6652337224FC69000F385BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E665233C224FC69000F385BD /* LightLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6652340224FC69000F385BD /* LightLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLifeTests.swift; sourceTree = "<group>"; };
+		E6652342224FC69000F385BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6652347224FC69000F385BD /* LightLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E665234B224FC69000F385BD /* LightLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLifeUITests.swift; sourceTree = "<group>"; };
+		E665234D224FC69000F385BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6652325224FC68D00F385BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6652339224FC69000F385BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6652344224FC69000F385BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E665231F224FC68D00F385BD = {
+			isa = PBXGroup;
+			children = (
+				E665232A224FC68D00F385BD /* LightLife */,
+				E665233F224FC69000F385BD /* LightLifeTests */,
+				E665234A224FC69000F385BD /* LightLifeUITests */,
+				E6652329224FC68D00F385BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6652329224FC68D00F385BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6652328224FC68D00F385BD /* LightLife.app */,
+				E665233C224FC69000F385BD /* LightLifeTests.xctest */,
+				E6652347224FC69000F385BD /* LightLifeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E665232A224FC68D00F385BD /* LightLife */ = {
+			isa = PBXGroup;
+			children = (
+				E665232B224FC68D00F385BD /* AppDelegate.swift */,
+				E665232D224FC68D00F385BD /* ViewController.swift */,
+				E665232F224FC68D00F385BD /* Main.storyboard */,
+				E6652332224FC69000F385BD /* Assets.xcassets */,
+				E6652334224FC69000F385BD /* LaunchScreen.storyboard */,
+				E6652337224FC69000F385BD /* Info.plist */,
+			);
+			path = LightLife;
+			sourceTree = "<group>";
+		};
+		E665233F224FC69000F385BD /* LightLifeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6652340224FC69000F385BD /* LightLifeTests.swift */,
+				E6652342224FC69000F385BD /* Info.plist */,
+			);
+			path = LightLifeTests;
+			sourceTree = "<group>";
+		};
+		E665234A224FC69000F385BD /* LightLifeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E665234B224FC69000F385BD /* LightLifeUITests.swift */,
+				E665234D224FC69000F385BD /* Info.plist */,
+			);
+			path = LightLifeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6652327224FC68D00F385BD /* LightLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6652350224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLife" */;
+			buildPhases = (
+				E6652324224FC68D00F385BD /* Sources */,
+				E6652325224FC68D00F385BD /* Frameworks */,
+				E6652326224FC68D00F385BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightLife;
+			productName = LightLife;
+			productReference = E6652328224FC68D00F385BD /* LightLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E665233B224FC69000F385BD /* LightLifeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6652353224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeTests" */;
+			buildPhases = (
+				E6652338224FC69000F385BD /* Sources */,
+				E6652339224FC69000F385BD /* Frameworks */,
+				E665233A224FC69000F385BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E665233E224FC69000F385BD /* PBXTargetDependency */,
+			);
+			name = LightLifeTests;
+			productName = LightLifeTests;
+			productReference = E665233C224FC69000F385BD /* LightLifeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6652346224FC69000F385BD /* LightLifeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6652356224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeUITests" */;
+			buildPhases = (
+				E6652343224FC69000F385BD /* Sources */,
+				E6652344224FC69000F385BD /* Frameworks */,
+				E6652345224FC69000F385BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6652349224FC69000F385BD /* PBXTargetDependency */,
+			);
+			name = LightLifeUITests;
+			productName = LightLifeUITests;
+			productReference = E6652347224FC69000F385BD /* LightLifeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6652320224FC68D00F385BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "joan barroso";
+				TargetAttributes = {
+					E6652327224FC68D00F385BD = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E665233B224FC69000F385BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E6652327224FC68D00F385BD;
+					};
+					E6652346224FC69000F385BD = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E6652327224FC68D00F385BD;
+					};
+				};
+			};
+			buildConfigurationList = E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LightLife" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E665231F224FC68D00F385BD;
+			productRefGroup = E6652329224FC68D00F385BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6652327224FC68D00F385BD /* LightLife */,
+				E665233B224FC69000F385BD /* LightLifeTests */,
+				E6652346224FC69000F385BD /* LightLifeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6652326224FC68D00F385BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6652336224FC69000F385BD /* LaunchScreen.storyboard in Resources */,
+				E6652333224FC69000F385BD /* Assets.xcassets in Resources */,
+				E6652331224FC68D00F385BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E665233A224FC69000F385BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6652345224FC69000F385BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6652324224FC68D00F385BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E665232E224FC68D00F385BD /* ViewController.swift in Sources */,
+				E665232C224FC68D00F385BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6652338224FC69000F385BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6652341224FC69000F385BD /* LightLifeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6652343224FC69000F385BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E665234C224FC69000F385BD /* LightLifeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E665233E224FC69000F385BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6652327224FC68D00F385BD /* LightLife */;
+			targetProxy = E665233D224FC69000F385BD /* PBXContainerItemProxy */;
+		};
+		E6652349224FC69000F385BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6652327224FC68D00F385BD /* LightLife */;
+			targetProxy = E6652348224FC69000F385BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E665232F224FC68D00F385BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6652330224FC68D00F385BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6652334224FC69000F385BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6652335224FC69000F385BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E665234E224FC69000F385BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E665234F224FC69000F385BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6652351224FC69000F385BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6652352224FC69000F385BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLife/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6652354224FC69000F385BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightLife.app/LightLife";
+			};
+			name = Debug;
+		};
+		E6652355224FC69000F385BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLifeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLifeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightLife.app/LightLife";
+			};
+			name = Release;
+		};
+		E6652357224FC69000F385BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightLife;
+			};
+			name = Debug;
+		};
+		E6652358224FC69000F385BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LSZWTD6FD;
+				INFOPLIST_FILE = LightLifeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joanbarroso.LightLifeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightLife;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LightLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E665234E224FC69000F385BD /* Debug */,
+				E665234F224FC69000F385BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6652350224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6652351224FC69000F385BD /* Debug */,
+				E6652352224FC69000F385BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6652353224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6652354224FC69000F385BD /* Debug */,
+				E6652355224FC69000F385BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6652356224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6652357224FC69000F385BD /* Debug */,
+				E6652358224FC69000F385BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6652320224FC68D00F385BD /* Project object */;
+}
