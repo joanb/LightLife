@@ -1,0 +1,6 @@
+osx_image: xcode10.2
+
+language: swift
+xcode_project: LightLife.xcodeproj
+xcode_scheme: LightLifeTests
+xcode_destination: platform=iOS Simulator,OS=10.1,name=iPhone X
