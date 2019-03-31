@@ -9,10 +9,9 @@
 import UIKit
 
 class RemindListViewController: UIViewController {
-    
-    
+
     var origin: String?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         print("came from \(String(describing: origin))")
