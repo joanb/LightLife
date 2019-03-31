@@ -9,20 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
-    @IBAction func onRedLightPressed(_ sender: Any) {
-    }
-    @IBAction func onAmbarLightPressed(_ sender: Any) {
-    }
-    @IBAction func onGreenLightPressed(_ sender: Any) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinaton = segue.destination as? RemindListViewController else {
+          return
+        }
+        destinaton.origin = (sender as? UIStoryboardSegue)?.identifier ?? "unknown"
+    }
 }
 
