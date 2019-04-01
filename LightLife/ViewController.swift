@@ -10,16 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var redButton: UIButton!
+    @IBOutlet weak var yellowButton: UIButton!
+    @IBOutlet weak var greenButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        customise()
+    }
+    
+    
+    func customise() {
+        redButton.layer.cornerRadius = 50
+        yellowButton.layer.cornerRadius = 50
+        greenButton.layer.cornerRadius = 50
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinaton = segue.destination as? RemindListViewController else {
           return
         }
-        destinaton.origin = (sender as? UIStoryboardSegue)?.identifier ?? "unknown"
+        destinaton.origin = segue.identifier
     }
 }
 
