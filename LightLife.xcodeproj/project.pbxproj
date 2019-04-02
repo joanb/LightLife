@@ -99,7 +99,7 @@
 		E665232A224FC68D00F385BD /* LightLife */ = {
 			isa = PBXGroup;
 			children = (
-				E6D754072251665B00149854 /* New Group */,
+				E6D754072251665B00149854 /* Reminders */,
 				E665232B224FC68D00F385BD /* AppDelegate.swift */,
 				E665232D224FC68D00F385BD /* ViewController.swift */,
 				E665232F224FC68D00F385BD /* Main.storyboard */,
@@ -128,12 +128,12 @@
 			path = LightLifeUITests;
 			sourceTree = "<group>";
 		};
-		E6D754072251665B00149854 /* New Group */ = {
+		E6D754072251665B00149854 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
 				E6D754082251668F00149854 /* RemindListViewController.swift */,
 			);
-			path = "New Group";
+			path = Reminders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
