@@ -111,13 +111,53 @@
                     <view key="view" contentMode="scaleToFill" id="eGZ-c6-gxT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LjE-3a-mca" customClass="RemindListViewConstroller">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e6u-dy-IQD">
+                                    <size key="itemSize" width="263" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LcT-3l-hTR" customClass="ReminderCellCollectionViewCell" customModule="LightLife" customModuleProvider="target">
+                                        <rect key="frame" x="75.666666666666671" y="0.0" width="263" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="263" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03O-6K-yPa">
+                                                    <rect key="frame" x="111" y="15" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="reminderTitle" destination="03O-6K-yPa" id="8g1-mG-VvT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ugY-RX-TLx" firstAttribute="bottom" secondItem="LjE-3a-mca" secondAttribute="bottom" id="IMD-OO-IVK"/>
+                            <constraint firstItem="LjE-3a-mca" firstAttribute="top" secondItem="ugY-RX-TLx" secondAttribute="top" id="Iyb-K9-VZY"/>
+                            <constraint firstItem="LjE-3a-mca" firstAttribute="leading" secondItem="ugY-RX-TLx" secondAttribute="leading" id="Wjh-Fp-t3A"/>
+                            <constraint firstItem="ugY-RX-TLx" firstAttribute="trailing" secondItem="LjE-3a-mca" secondAttribute="trailing" id="bpu-i0-Ild"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ugY-RX-TLx"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9P-1a-S0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="112"/>
+            <point key="canvasLocation" x="843.47826086956525" y="111.68478260869566"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
