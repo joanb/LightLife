@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class RemindListViewController: UICollectionViewController {
     
-    let reminders : [Reminder] = [Reminder(), Reminder()]
+    let reminders : [Reminder] = [Reminder(title: "urgente"), Reminder(title: "Super urgente")]
     var origin: String?
     
     override func viewDidLoad() {
@@ -28,12 +28,15 @@ extension RemindListViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return reminders.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        cell.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ReminderCellCollectionViewCell
+        
+        let reminder = reminders[indexPath.item]
+        
+        cell.reminderTitle.text = reminder.title
         return cell
     }
 }
