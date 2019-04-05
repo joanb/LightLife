@@ -126,8 +126,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exL-Kc-vo7">
-                                            <rect key="frame" x="4" y="31.5" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exL-Kc-vo7">
+                                            <rect key="frame" x="24" y="32" width="42" height="20"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -136,6 +136,9 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="exL-Kc-vo7" firstAttribute="centerY" secondItem="mLB-lq-cBG" secondAttribute="centerY" id="1RS-27-pSQ"/>
+                                    <constraint firstItem="exL-Kc-vo7" firstAttribute="leading" secondItem="mLB-lq-cBG" secondAttribute="leadingMargin" constant="16" id="7BL-yX-1pi"/>
+                                    <constraint firstItem="exL-Kc-vo7" firstAttribute="top" secondItem="mLB-lq-cBG" secondAttribute="topMargin" constant="4" id="K54-jg-1Hf"/>
+                                    <constraint firstItem="exL-Kc-vo7" firstAttribute="centerY" secondItem="mLB-lq-cBG" secondAttribute="centerY" id="hK5-vL-rvs"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <connections>

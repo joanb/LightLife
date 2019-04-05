@@ -18,6 +18,11 @@ class RemindListViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("came from \(String(describing: origin))")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+    }
+    
+    @objc private func addTapped() {
+        print("asd")
     }
 }
 
@@ -33,7 +38,7 @@ extension RemindListViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ReminderCellCollectionViewCell
-        
+
         let reminder = reminders[indexPath.item]
         
         cell.reminderTitle.text = reminder.title
