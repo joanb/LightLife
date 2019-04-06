@@ -12,7 +12,31 @@ private let reuseIdentifier = "Cell"
 
 class RemindListViewController: UICollectionViewController {
     
-    let reminders : [Reminder] = [Reminder(title: "urgente"), Reminder(title: "Super urgente")]
+    let reminders : [Reminder] = [
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "urgente"),
+        Reminder(title: "Super urgente")
+    ]
     var origin: String?
     
     override func viewDidLoad() {
@@ -43,6 +67,13 @@ extension RemindListViewController {
         
         cell.reminderTitle.text = reminder.title
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        return (collectionView.dequeueReusableSupplementaryView(
+            ofKind: kind,
+            withReuseIdentifier: "\(ReminderHeader.self)",
+            for: indexPath) as? ReminderHeader)!
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QEG-7i-Vd6">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <navigationController id="QEG-7i-Vd6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tkJ-p3-me5">
-                        <rect key="frame" x="0.0" y="20" width="834" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,11 +31,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LightLife" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="vMK-qo-fgU">
-                                <rect key="frame" x="367" y="381" width="100" height="350"/>
+                                <rect key="frame" x="137.5" y="158.5" width="100" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuw-P1-4Uc">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -109,18 +109,18 @@
             <objects>
                 <collectionViewController id="4zC-VW-dHP" customClass="RemindListViewController" customModule="LightLife" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EaK-qR-kgx">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lx4-XG-v8A">
                             <size key="itemSize" width="414" height="84"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="90"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="mLB-lq-cBG" customClass="ReminderCellCollectionViewCell" customModule="LightLife" customModuleProvider="target">
-                                <rect key="frame" x="210" y="0.0" width="414" height="84"/>
+                                <rect key="frame" x="-19.5" y="90" width="414" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
@@ -146,6 +146,35 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ReminderHeader" id="iEm-6M-NE6" customClass="ReminderHeader" customModule="LightLife" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NUi-ui-Tvf">
+                                    <rect key="frame" x="28" y="30" width="269" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gk-XV-0PG">
+                                    <rect key="frame" x="313" y="30" width="46" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="onAddClick:" destination="iEm-6M-NE6" eventType="touchUpInside" id="5fl-hF-dnH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="5gk-XV-0PG" firstAttribute="leading" secondItem="NUi-ui-Tvf" secondAttribute="trailing" constant="16" id="1Qn-jB-t0q"/>
+                                <constraint firstItem="NUi-ui-Tvf" firstAttribute="leading" secondItem="iEm-6M-NE6" secondAttribute="leadingMargin" constant="20" id="G8l-ua-gPd"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="5gk-XV-0PG" secondAttribute="trailing" constant="8" id="SKC-oF-bjW"/>
+                                <constraint firstItem="NUi-ui-Tvf" firstAttribute="centerY" secondItem="iEm-6M-NE6" secondAttribute="centerY" id="UIq-pq-R4N"/>
+                                <constraint firstItem="5gk-XV-0PG" firstAttribute="centerY" secondItem="iEm-6M-NE6" secondAttribute="centerY" id="wQ4-g4-QZI"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="newReminderInput" destination="NUi-ui-Tvf" id="M1f-XU-j3N"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="4zC-VW-dHP" id="B61-mf-DpE"/>
                             <outlet property="delegate" destination="4zC-VW-dHP" id="aGz-N6-skN"/>
@@ -154,7 +183,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6M-1Z-H7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.23741007194246" y="111.15107913669065"/>
+            <point key="canvasLocation" x="934" y="112"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
