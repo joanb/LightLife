@@ -8,20 +8,21 @@
 
 import Foundation
 
-class RemindersPresenter {
+class RemindersPresenter: NSObject {
     
     let ui: RemindListViewController
     
     init(viewController: RemindListViewController) {
         self.ui = viewController
     }
+    
     @objc
     func addTapped() {
         ui.showAddReminderAlert()
     }
     
     func onViewReady() {
-        
+     ui.configureNavBar()
     }
     
     func onAddReminderClick(reminderText: String, priority: Priority) {

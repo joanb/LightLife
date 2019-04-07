@@ -13,8 +13,8 @@ struct Reminder {
     let priority: Priority
 }
 
-enum Priority {
-    case Green
-    case Yellow
-    case Red
+enum Priority: String {
+    case Green = "Verde"
+    case Yellow = "Ámbar"
+    case Red = "Rojo"
 }

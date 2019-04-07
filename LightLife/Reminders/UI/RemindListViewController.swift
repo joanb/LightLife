@@ -47,11 +47,11 @@ class RemindListViewController: UICollectionViewController {
     }
     
     func configureNavBar() {
-         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(presenter!.addTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(showAddReminderAlert))
     }
     
-    func showAddReminderAlert() {
-        let alert = UIAlertController(title: "Recordatório \(String(describing: origin))", message: "Añade un nuevo recordatório", preferredStyle: .alert)
+    @objc func showAddReminderAlert() {
+        let alert = UIAlertController(title: "Recordatório \(origin!.rawValue)", message: "Añade un nuevo recordatório", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { [weak self] _ in
             guard let strongSelf = self else {
                 return
