@@ -10,4 +10,11 @@ import Foundation
 
 struct Reminder {
     let title: String
+    let priority: Priority
+}
+
+enum Priority {
+    case Green
+    case Yellow
+    case Red
 }

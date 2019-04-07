@@ -26,10 +26,22 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinaton = segue.destination as? RemindListViewController else {
+        guard let destination = segue.destination as? RemindListViewController else {
           return
         }
-        destinaton.origin = segue.identifier
+        let prioritySelected: Priority
+        switch segue.identifier {
+        case "redSegue":
+            prioritySelected = Priority.Red
+        case "yellowSegue":
+            prioritySelected = Priority.Yellow
+        case "greenSegue":
+            prioritySelected = Priority.Green
+        default:
+            prioritySelected = Priority.Green
+        }
+        destination.origin = prioritySelected
+        destination.presenter = RemindersPresenter(viewController: destination)
     }
 }
 
