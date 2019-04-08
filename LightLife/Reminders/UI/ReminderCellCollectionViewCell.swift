@@ -9,6 +9,6 @@
 import UIKit
 
 class ReminderCellCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var reminderTitle: UILabel!
 }
+ 

@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         customise()
     }
     
-    
     func customise() {
         redButton.layer.cornerRadius = 50
         yellowButton.layer.cornerRadius = 50
@@ -44,4 +43,3 @@ class ViewController: UIViewController {
         destination.presenter = RemindersPresenter(viewController: destination)
     }
 }
-

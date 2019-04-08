@@ -14,7 +14,7 @@ struct Reminder {
 }
 
 enum Priority: String {
-    case Green = "Verde"
-    case Yellow = "Ámbar"
-    case Red = "Rojo"
+    case Green = "verde"
+    case Yellow = "ámbar"
+    case Red = "rojo"
 }

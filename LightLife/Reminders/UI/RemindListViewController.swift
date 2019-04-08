@@ -12,7 +12,7 @@ private let reuseIdentifier = "Cell"
 
 class RemindListViewController: UICollectionViewController {
     
-    let reminders : [Reminder] = [
+    let reminders: [Reminder] = [
         Reminder(title: "urgente", priority: Priority.Green),
         Reminder(title: "urgente", priority: Priority.Green),
         Reminder(title: "urgente", priority: Priority.Green),
@@ -59,7 +59,7 @@ class RemindListViewController: UICollectionViewController {
             strongSelf.presenter?.onAddReminderClick(reminderText: (alert.textFields?[0].text)!, priority: strongSelf.origin!)
         }))
         
-        alert.addTextField(configurationHandler: { (UITextField) in})
+        alert.addTextField(configurationHandler: { _ in})
         self.present(alert, animated: true, completion: nil)
     }
 }
@@ -69,13 +69,13 @@ extension RemindListViewController {
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return reminders.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ReminderCellCollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ReminderCellCollectionViewCell
+            else { return UICollectionViewCell() }
 
         let reminder = reminders[indexPath.item]
         
@@ -83,4 +83,3 @@ extension RemindListViewController {
         return cell
     }
 }
-
