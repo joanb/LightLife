@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F62F53449D91B8A037A6B0 /* Pods_LightLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64886604D625429E816854 /* Pods_LightLifeUITests.framework */; };
+		208FE251C9FB9DBAC8900984 /* Pods_LightLifeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EC3155F49E2398312B51C1 /* Pods_LightLifeTests.framework */; };
+		68E4485CCA7288677CEFD86C /* Pods_LightLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE02FC200B568CB73BBDAD0 /* Pods_LightLife.framework */; };
 		E665232C224FC68D00F385BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665232B224FC68D00F385BD /* AppDelegate.swift */; };
 		E665232E224FC68D00F385BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665232D224FC68D00F385BD /* ViewController.swift */; };
 		E6652331224FC68D00F385BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E665232F224FC68D00F385BD /* Main.storyboard */; };
@@ -38,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16ABD5EAE04FE20555C08058 /* Pods-LightLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLife.debug.xcconfig"; path = "Target Support Files/Pods-LightLife/Pods-LightLife.debug.xcconfig"; sourceTree = "<group>"; };
+		28B03DF80FAB2871AB76284F /* Pods-LightLifeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLifeTests.release.xcconfig"; path = "Target Support Files/Pods-LightLifeTests/Pods-LightLifeTests.release.xcconfig"; sourceTree = "<group>"; };
+		29BA8C2EA993F62C0E016816 /* Pods-LightLifeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLifeTests.debug.xcconfig"; path = "Target Support Files/Pods-LightLifeTests/Pods-LightLifeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE02FC200B568CB73BBDAD0 /* Pods_LightLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E15289FB9DE1C553ABFCA1 /* Pods-LightLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLifeUITests.release.xcconfig"; path = "Target Support Files/Pods-LightLifeUITests/Pods-LightLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6EBBAC3047EA0F55857E13FC /* Pods-LightLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLife.release.xcconfig"; path = "Target Support Files/Pods-LightLife/Pods-LightLife.release.xcconfig"; sourceTree = "<group>"; };
+		71EC3155F49E2398312B51C1 /* Pods_LightLifeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightLifeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E64886604D625429E816854 /* Pods_LightLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88531FF4D2A7E78F01748582 /* Pods-LightLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightLifeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LightLifeUITests/Pods-LightLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6652328224FC68D00F385BD /* LightLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E665232B224FC68D00F385BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E665232D224FC68D00F385BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E4485CCA7288677CEFD86C /* Pods_LightLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				208FE251C9FB9DBAC8900984 /* Pods_LightLifeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F62F53449D91B8A037A6B0 /* Pods_LightLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F4D8F0CEE500AE5FC52EF9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DE02FC200B568CB73BBDAD0 /* Pods_LightLife.framework */,
+				71EC3155F49E2398312B51C1 /* Pods_LightLifeTests.framework */,
+				7E64886604D625429E816854 /* Pods_LightLifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		565CAAC8D2A3353A6A766756 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16ABD5EAE04FE20555C08058 /* Pods-LightLife.debug.xcconfig */,
+				6EBBAC3047EA0F55857E13FC /* Pods-LightLife.release.xcconfig */,
+				29BA8C2EA993F62C0E016816 /* Pods-LightLifeTests.debug.xcconfig */,
+				28B03DF80FAB2871AB76284F /* Pods-LightLifeTests.release.xcconfig */,
+				88531FF4D2A7E78F01748582 /* Pods-LightLifeUITests.debug.xcconfig */,
+				69E15289FB9DE1C553ABFCA1 /* Pods-LightLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E665231F224FC68D00F385BD = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +128,8 @@
 				E665233F224FC69000F385BD /* LightLifeTests */,
 				E665234A224FC69000F385BD /* LightLifeUITests */,
 				E6652329224FC68D00F385BD /* Products */,
+				565CAAC8D2A3353A6A766756 /* Pods */,
+				4F4D8F0CEE500AE5FC52EF9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6652350224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLife" */;
 			buildPhases = (
+				9443DC1AD22D6AB1C198C57A /* [CP] Check Pods Manifest.lock */,
 				E6652324224FC68D00F385BD /* Sources */,
 				E6652325224FC68D00F385BD /* Frameworks */,
 				E6652326224FC68D00F385BD /* Resources */,
+				52BD967044A7CE26776B9B34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6652353224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeTests" */;
 			buildPhases = (
+				331E43873BC37E873648D35F /* [CP] Check Pods Manifest.lock */,
 				E6652338224FC69000F385BD /* Sources */,
 				E6652339224FC69000F385BD /* Frameworks */,
 				E665233A224FC69000F385BD /* Resources */,
+				81D3BB954076A7326235EA7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6652356224FC69000F385BD /* Build configuration list for PBXNativeTarget "LightLifeUITests" */;
 			buildPhases = (
+				ED082BA2E0A9D60DB9FF1A3C /* [CP] Check Pods Manifest.lock */,
 				E6652343224FC69000F385BD /* Sources */,
 				E6652344224FC69000F385BD /* Frameworks */,
 				E6652345224FC69000F385BD /* Resources */,
@@ -286,6 +332,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		331E43873BC37E873648D35F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LightLifeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52BD967044A7CE26776B9B34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LightLife/Pods-LightLife-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LightLife/Pods-LightLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81D3BB954076A7326235EA7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LightLifeTests/Pods-LightLifeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LightLifeTests/Pods-LightLifeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9443DC1AD22D6AB1C198C57A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LightLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED082BA2E0A9D60DB9FF1A3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LightLifeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6652324224FC68D00F385BD /* Sources */ = {
@@ -470,6 +633,7 @@
 		};
 		E6652351224FC69000F385BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16ABD5EAE04FE20555C08058 /* Pods-LightLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -488,6 +652,7 @@
 		};
 		E6652352224FC69000F385BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EBBAC3047EA0F55857E13FC /* Pods-LightLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +671,7 @@
 		};
 		E6652354224FC69000F385BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BA8C2EA993F62C0E016816 /* Pods-LightLifeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -527,6 +693,7 @@
 		};
 		E6652355224FC69000F385BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B03DF80FAB2871AB76284F /* Pods-LightLifeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +715,7 @@
 		};
 		E6652357224FC69000F385BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88531FF4D2A7E78F01748582 /* Pods-LightLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +736,7 @@
 		};
 		E6652358224FC69000F385BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E15289FB9DE1C553ABFCA1 /* Pods-LightLifeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

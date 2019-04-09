@@ -1,0 +1,6 @@
+framework module Pods_LightLife {
+  umbrella header "Pods-LightLife-umbrella.h"
+
+  export *
+  module * { export * }
+}
