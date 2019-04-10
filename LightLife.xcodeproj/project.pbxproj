@@ -21,6 +21,7 @@
 		E6D754112253ECD300149854 /* ReminderCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D754102253ECD300149854 /* ReminderCellCollectionViewCell.swift */; };
 		E6D754152255343500149854 /* RemindListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D754142255343500149854 /* RemindListViewController.swift */; };
 		E6E68910225A6434005AA34D /* RemindersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E6890F225A6434005AA34D /* RemindersPresenter.swift */; };
+		E6E68913225D2B69005AA34D /* ReminderLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E68912225D2B69005AA34D /* ReminderLocalDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		E6D754102253ECD300149854 /* ReminderCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6D754142255343500149854 /* RemindListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewController.swift; sourceTree = "<group>"; };
 		E6E6890F225A6434005AA34D /* RemindersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersPresenter.swift; sourceTree = "<group>"; };
+		E6E68912225D2B69005AA34D /* ReminderLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderLocalDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,6 @@
 				88531FF4D2A7E78F01748582 /* Pods-LightLifeUITests.debug.xcconfig */,
 				69E15289FB9DE1C553ABFCA1 /* Pods-LightLifeUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +147,7 @@
 		E665232A224FC68D00F385BD /* LightLife */ = {
 			isa = PBXGroup;
 			children = (
+				E6E68914225D2BF1005AA34D /* Notifications */,
 				E6D754072251665B00149854 /* Reminders */,
 				E665232B224FC68D00F385BD /* AppDelegate.swift */,
 				E665232D224FC68D00F385BD /* ViewController.swift */,
@@ -178,6 +180,7 @@
 		E6D754072251665B00149854 /* Reminders */ = {
 			isa = PBXGroup;
 			children = (
+				E6E68911225D2B5B005AA34D /* Data */,
 				E6D7540D2253EB4300149854 /* UI */,
 				E6D7540C2253E84700149854 /* Model */,
 			);
@@ -200,6 +203,21 @@
 				E6E6890F225A6434005AA34D /* RemindersPresenter.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		E6E68911225D2B5B005AA34D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E6E68912225D2B69005AA34D /* ReminderLocalDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E6E68914225D2BF1005AA34D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +475,7 @@
 			files = (
 				E6D754152255343500149854 /* RemindListViewController.swift in Sources */,
 				E665232E224FC68D00F385BD /* ViewController.swift in Sources */,
+				E6E68913225D2B69005AA34D /* ReminderLocalDataSource.swift in Sources */,
 				E6D754112253ECD300149854 /* ReminderCellCollectionViewCell.swift in Sources */,
 				E6E68910225A6434005AA34D /* RemindersPresenter.swift in Sources */,
 				E665232C224FC68D00F385BD /* AppDelegate.swift in Sources */,

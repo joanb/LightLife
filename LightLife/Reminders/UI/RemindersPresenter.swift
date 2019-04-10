@@ -11,9 +11,11 @@ import Foundation
 class RemindersPresenter: NSObject {
     
     let viewController: RemindListViewController
+    let reminderDisk: ReminderLocalDataSource
     
-    init(viewController: RemindListViewController) {
+    init(viewController: RemindListViewController, reminderLocalDataSource: ReminderLocalDataSource) {
         self.viewController = viewController
+        self.reminderDisk = reminderLocalDataSource
     }
     
     @objc
@@ -26,7 +28,8 @@ class RemindersPresenter: NSObject {
     }
     
     func onAddReminderClick(reminderText: String, priority: Priority) {
-        
+        let reminder  = Reminder(title: reminderText, priority: priority)
+        reminderDisk.save(reminder: reminder)
     }
     
     func deleteReminder() {}

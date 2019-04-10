@@ -7,10 +7,30 @@
 //
 
 import Foundation
+import RealmSwift
+import Realm
 
-struct Reminder {
-    let title: String
-    let priority: Priority
+class Reminder: Object {
+    @objc let title: String
+    @objc let priority: String
+    
+    init(title: String, priority: Priority) {
+        self.title = title
+        self.priority = priority.rawValue
+        super.init()
+    }
+    
+    required init(realm: RLMRealm, schema: RLMObjectSchema) {
+        fatalError("init(realm:schema:) has not been implemented")
+    }
+    
+    required init(value: Any, schema: RLMSchema) {
+        fatalError("init(value:schema:) has not been implemented")
+    }
+    
+    required init() {
+        fatalError("init() has not been implemented")
+    }
 }
 
 enum Priority: String {
