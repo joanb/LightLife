@@ -7,36 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 private let reuseIdentifier = "Cell"
 
 class RemindListViewController: UICollectionViewController {
     
-    let reminders: [Reminder] = [
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "urgente", priority: Priority.Green),
-        Reminder(title: "Super urgente", priority: Priority.Green)
-    ]
+    var reminders: Results<Reminder>?
     var origin: Priority?
     var presenter: RemindersPresenter?
     
@@ -62,6 +39,10 @@ class RemindListViewController: UICollectionViewController {
         alert.addTextField(configurationHandler: { _ in})
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func showReminders(reminders: Results<Reminder>) {
+        self.reminders = reminders
+    }
 }
 
 extension RemindListViewController {
@@ -70,15 +51,15 @@ extension RemindListViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return reminders.count
+        return reminders?.count ?? 0
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ReminderCellCollectionViewCell
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ReminderCellCollectionViewCell,
+            let reminder = reminders?[indexPath.item]
             else { return UICollectionViewCell() }
 
-        let reminder = reminders[indexPath.item]
-        
         cell.reminderTitle.text = reminder.title
         return cell
     }

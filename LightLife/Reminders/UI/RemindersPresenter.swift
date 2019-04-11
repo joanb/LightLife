@@ -24,7 +24,9 @@ class RemindersPresenter: NSObject {
     }
     
     func onViewReady() {
-     viewController.configureNavBar()
+        viewController.configureNavBar()
+        let reminders = reminderDisk.getAll()
+        viewController.showReminders(reminders: reminders)
     }
     
     func onAddReminderClick(reminderText: String, priority: Priority) {

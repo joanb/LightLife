@@ -11,25 +11,13 @@ import RealmSwift
 import Realm
 
 class Reminder: Object {
-    @objc let title: String
-    @objc let priority: String
+    @objc var title: String = ""
+    @objc var priority: String = ""
     
-    init(title: String, priority: Priority) {
+    convenience init(title: String, priority: Priority) {
+        self.init()
         self.title = title
         self.priority = priority.rawValue
-        super.init()
-    }
-    
-    required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
-    }
-    
-    required init(value: Any, schema: RLMSchema) {
-        fatalError("init(value:schema:) has not been implemented")
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
     }
 }
 
