@@ -42,6 +42,7 @@ class RemindListViewController: UICollectionViewController {
     
     func showReminders(reminders: Results<Reminder>) {
         self.reminders = reminders
+        collectionView.reloadData()
     }
 }
 
@@ -60,6 +61,7 @@ extension RemindListViewController {
             let reminder = reminders?[indexPath.item]
             else { return UICollectionViewCell() }
 
+        cell.backgroundColor = UIColor.blue
         cell.reminderTitle.text = reminder.title
         return cell
     }

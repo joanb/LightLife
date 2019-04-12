@@ -11,8 +11,8 @@ import RealmSwift
 import Realm
 
 class Reminder: Object {
-    @objc var title: String = ""
-    @objc var priority: String = ""
+    @objc dynamic var title: String = ""
+    @objc dynamic var priority: String = ""
     
     convenience init(title: String, priority: Priority) {
         self.init()

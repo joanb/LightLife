@@ -32,6 +32,8 @@ class RemindersPresenter: NSObject {
     func onAddReminderClick(reminderText: String, priority: Priority) {
         let reminder  = Reminder(title: reminderText, priority: priority)
         reminderDisk.save(reminder: reminder)
+        let reminders = reminderDisk.getAll()
+        viewController.showReminders(reminders: reminders)
     }
     
     func deleteReminder() {}
