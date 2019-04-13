@@ -44,6 +44,14 @@ class RemindListViewController: UICollectionViewController {
         self.reminders = reminders
         collectionView.reloadData()
     }
+    
+    @objc func someMethod(sender: UISwipeGestureRecognizer) {
+        let cell = sender.view as! UICollectionViewCell
+        let itemIndex = self.collectionView.indexPath(for: cell)!.item
+        guard let reminder: Reminder = reminders?[itemIndex] else { return }
+        presenter?.onItemDelete(reminder: reminder)
+        self.collectionView.reloadData()
+    }
 }
 
 extension RemindListViewController {
@@ -60,6 +68,10 @@ extension RemindListViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ReminderCellCollectionViewCell,
             let reminder = reminders?[indexPath.item]
             else { return UICollectionViewCell() }
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(someMethod(sender:)) )
+        leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
+        cell.addGestureRecognizer(leftSwipe)
 
         cell.backgroundColor = UIColor.blue
         cell.reminderTitle.text = reminder.title

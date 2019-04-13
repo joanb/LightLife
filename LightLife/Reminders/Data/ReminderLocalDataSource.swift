@@ -21,4 +21,12 @@ class ReminderLocalDataSource {
             realm.add(reminder)
         }
     }
+    
+    func deleteReminder(reminder: Reminder) -> Results<Reminder> {
+        //let reminders  =  getAll().filter("title != \(reminder.title)")
+        try! realm.write {
+            realm.delete(reminder)
+        }
+        return getAll()
+    }
 }

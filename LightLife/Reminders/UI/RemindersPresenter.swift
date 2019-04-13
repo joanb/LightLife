@@ -23,6 +23,11 @@ class RemindersPresenter: NSObject {
         viewController.showAddReminderAlert()
     }
     
+    func onItemDelete(reminder: Reminder) {
+        let reminders = reminderDisk.deleteReminder(reminder: reminder)
+        viewController.showReminders(reminders: reminders)
+    }
+    
     func onViewReady() {
         viewController.configureNavBar()
         let reminders = reminderDisk.getAll()
