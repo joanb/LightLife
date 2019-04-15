@@ -7,7 +7,48 @@
 //
 
 import Foundation
+import UserNotifications
 
 struct NotificationsPermission {
 
+    func scheduleGreenNotification(reminder: Reminder) {
+        let content = getContent(title: "", message: reminder.title)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "greenNotification", content: content, trigger: trigger)
+        addNotification(request: request)
+    }
+    
+    func scheduleYellowNotification(reminder: Reminder) {
+        let content = getContent(title: "", message: reminder.title)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "yellowNotification", content: content, trigger: trigger)
+        addNotification(request: request)
+    }
+    
+    func scheduleRedNotification(reminder: Reminder) {
+        let content = getContent(title: "", message: reminder.title)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "redNotification", content: content, trigger: trigger)
+        addNotification(request: request)
+    }
+    
+    private func addNotification(request: UNNotificationRequest) {
+        let center = UNUserNotificationCenter.current()
+        center.add(request) { (error) in
+            if let error = error
+            {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func getContent(title: String, message: String) -> UNNotificationContent{
+        let content = UNMutableNotificationContent()
+        content.title = "Invitation"
+        content.subtitle = "This is a Local Notification."
+        content.body = "You are invited."
+        content.categoryIdentifier = "INVITATION"
+        content.sound = UNNotificationSound.default
+        return content
+    }
 }
