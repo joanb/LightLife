@@ -40,6 +40,6 @@ class ViewController: UIViewController {
             prioritySelected = Priority.Green
         }
         destination.origin = prioritySelected
-        destination.presenter = RemindersPresenter(viewController: destination, reminderLocalDataSource: ReminderLocalDataSource())
+        destination.presenter = RemindersPresenter(viewController: destination, reminderLocalDataSource: ReminderLocalDataSource(), notifications: Notifications())
     }
 }

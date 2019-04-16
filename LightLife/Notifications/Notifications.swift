@@ -9,25 +9,25 @@
 import Foundation
 import UserNotifications
 
-struct NotificationsPermission {
+struct Notifications {
 
     func scheduleGreenNotification(reminder: Reminder) {
         let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: /*7200*/5, repeats: false)
         let request = UNNotificationRequest(identifier: "greenNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
     
     func scheduleYellowNotification(reminder: Reminder) {
         let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24, repeats: false)
         let request = UNNotificationRequest(identifier: "yellowNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
     
     func scheduleRedNotification(reminder: Reminder) {
         let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24*7, repeats: true)
         let request = UNNotificationRequest(identifier: "redNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
