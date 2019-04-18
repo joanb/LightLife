@@ -12,21 +12,21 @@ import UserNotifications
 struct Notifications {
 
     func scheduleGreenNotification(reminder: Reminder) {
-        let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: /*7200*/60, repeats: true)
+        let content = getContent(title: "GREEN ALERT", message: reminder.title)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
         let request = UNNotificationRequest(identifier: "greenNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
     
     func scheduleYellowNotification(reminder: Reminder) {
-        let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24, repeats: false)
+        let content = getContent(title: "YELLOW ALERT", message: reminder.title)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24, repeats: true)
         let request = UNNotificationRequest(identifier: "yellowNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
     
     func scheduleRedNotification(reminder: Reminder) {
-        let content = getContent(title: "", message: reminder.title)
+        let content = getContent(title: "RED ALERT", message: reminder.title)
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24*7, repeats: true)
         let request = UNNotificationRequest(identifier: "redNotification", content: content, trigger: trigger)
         addNotification(request: request)
@@ -44,9 +44,8 @@ struct Notifications {
     
     private func getContent(title: String, message: String) -> UNNotificationContent{
         let content = UNMutableNotificationContent()
-        content.title = "Invitation"
-        content.subtitle = "This is a Local Notification."
-        content.body = "You are invited."
+        content.title = title
+        content.subtitle = message
         content.categoryIdentifier = "INVITATION"
         content.sound = UNNotificationSound.default
         return content
