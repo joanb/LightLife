@@ -19,7 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 //        let notificationCenter = UNUserNotificationCenter.current()
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.sound,.badge], completionHandler: {didAllow,Error in })
+        let center = UNUserNotificationCenter.current()
+
+        center.requestAuthorization(options: [.alert,.sound,.badge], completionHandler: {didAllow,Error in })
+        
+        let invitationCategory = UNNotificationCategory(identifier: "INVITATION", actions: [], intentIdentifiers: [], options: UNNotificationCategoryOptions(rawValue: 0))
+        center.setNotificationCategories([invitationCategory])
+
         return true
     }
 }

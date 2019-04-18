@@ -13,7 +13,7 @@ struct Notifications {
 
     func scheduleGreenNotification(reminder: Reminder) {
         let content = getContent(title: "", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: /*7200*/5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: /*7200*/60, repeats: true)
         let request = UNNotificationRequest(identifier: "greenNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
