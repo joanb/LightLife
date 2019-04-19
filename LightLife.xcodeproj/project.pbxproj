@@ -17,6 +17,7 @@
 		E6652336224FC69000F385BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6652334224FC69000F385BD /* LaunchScreen.storyboard */; };
 		E6652341224FC69000F385BD /* LightLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6652340224FC69000F385BD /* LightLifeTests.swift */; };
 		E665234C224FC69000F385BD /* LightLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E665234B224FC69000F385BD /* LightLifeUITests.swift */; };
+		E682BF8F226A40030075373D /* RemindCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E682BF8E226A40030075373D /* RemindCollectionView.swift */; };
 		E6D7540B2253E80F00149854 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7540A2253E80F00149854 /* Reminder.swift */; };
 		E6D754112253ECD300149854 /* ReminderCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D754102253ECD300149854 /* ReminderCellCollectionViewCell.swift */; };
 		E6D754152255343500149854 /* RemindListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D754142255343500149854 /* RemindListViewController.swift */; };
@@ -65,6 +66,7 @@
 		E6652347224FC69000F385BD /* LightLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E665234B224FC69000F385BD /* LightLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightLifeUITests.swift; sourceTree = "<group>"; };
 		E665234D224FC69000F385BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E682BF8E226A40030075373D /* RemindCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindCollectionView.swift; sourceTree = "<group>"; };
 		E6D7540A2253E80F00149854 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		E6D754102253ECD300149854 /* ReminderCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6D754142255343500149854 /* RemindListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				E6D754142255343500149854 /* RemindListViewController.swift */,
 				E6D754102253ECD300149854 /* ReminderCellCollectionViewCell.swift */,
 				E6E6890F225A6434005AA34D /* RemindersPresenter.swift */,
+				E682BF8E226A40030075373D /* RemindCollectionView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E682BF8F226A40030075373D /* RemindCollectionView.swift in Sources */,
 				E6D754152255343500149854 /* RemindListViewController.swift in Sources */,
 				E665232E224FC68D00F385BD /* ViewController.swift in Sources */,
 				E6E68913225D2B69005AA34D /* ReminderLocalDataSource.swift in Sources */,
