@@ -19,6 +19,20 @@ class Reminder: Object {
         self.title = title
         self.priority = priority.rawValue
     }
+    
+    func getColor() -> UIColor? {
+        guard let priorityType = Priority(rawValue: self.priority)
+            else { return UIColor.red }
+        
+        switch priorityType {
+        case Priority.Green:
+            return UIColor.green
+        case Priority.Yellow:
+            return UIColor.yellow
+        case Priority.Red:
+            return UIColor.red
+        }
+    }
 }
 
 enum Priority: String {

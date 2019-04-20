@@ -19,15 +19,19 @@ struct Notifications {
     }
     
     func scheduleYellowNotification(reminder: Reminder) {
+        let date = Date()
         let content = getContent(title: "YELLOW ALERT", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24, repeats: true)
+        let triggerDaily = Calendar.current.dateComponents([.hour, .minute, .second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
         let request = UNNotificationRequest(identifier: "yellowNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
     
     func scheduleRedNotification(reminder: Reminder) {
+        let date = Date()
         let content = getContent(title: "RED ALERT", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600*24*7, repeats: true)
+        let triggerWeekly = Calendar.current.dateComponents([.weekday, .hour, .minute, .second], from: date)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: triggerWeekly, repeats: true)
         let request = UNNotificationRequest(identifier: "redNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }

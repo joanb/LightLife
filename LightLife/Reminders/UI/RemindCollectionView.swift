@@ -30,7 +30,7 @@ extension RemindListViewController {
         leftSwipe.direction = UISwipeGestureRecognizer.Direction.left
         cell.addGestureRecognizer(leftSwipe)
         
-        cell.backgroundColor = UIColor.blue
+        cell.backgroundColor = reminder.getColor()
         cell.reminderTitle.text = reminder.title
         return cell
     }
