@@ -9,7 +9,7 @@
 import Foundation
 import UserNotifications
 
-struct Notifications {
+class Notifications: NSObject, UNUserNotificationCenterDelegate {
 
     func scheduleGreenNotification(reminder: Reminder) {
         let content = getContent(title: "GREEN ALERT", message: reminder.title)
@@ -53,5 +53,12 @@ struct Notifications {
         content.categoryIdentifier = "INVITATION"
         content.sound = UNNotificationSound.default
         return content
+    }
+}
+
+extension Notifications {
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("willPresent method called")
+        completionHandler([.alert, .sound])
     }
 }
