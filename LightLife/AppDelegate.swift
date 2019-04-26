@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 //        let notificationCenter = UNUserNotificationCenter.current()
         let center = UNUserNotificationCenter.current()
+        center.delegate = self as? UNUserNotificationCenterDelegate
 
         center.requestAuthorization(options: [.alert,.sound,.badge], completionHandler: {didAllow,Error in })
         
@@ -32,5 +33,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
     {
         completionHandler([.alert, .badge, .sound])
+    }
+}
+
+extension Notifications {
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("willPresent method called")
+        completionHandler([.alert, .sound])
     }
 }
