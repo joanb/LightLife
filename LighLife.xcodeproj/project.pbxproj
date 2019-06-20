@@ -310,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LightLife" */;
+			buildConfigurationList = E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LighLife" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -663,6 +663,7 @@
 			baseConfigurationReference = 16ABD5EAE04FE20555C08058 /* Pods-LightLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSZWTD6FD;
 				INFOPLIST_FILE = LightLife/Info.plist;
@@ -682,6 +683,7 @@
 			baseConfigurationReference = 6EBBAC3047EA0F55857E13FC /* Pods-LightLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2LSZWTD6FD;
 				INFOPLIST_FILE = LightLife/Info.plist;
@@ -785,7 +787,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LightLife" */ = {
+		E6652323224FC68D00F385BD /* Build configuration list for PBXProject "LighLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E665234E224FC69000F385BD /* Debug */,

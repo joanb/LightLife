@@ -38,7 +38,14 @@ class RemindersPresenter: NSObject {
     
     func onAddReminderClick(reminderText: String, priority: Priority) {
         let reminder  = Reminder(title: reminderText, priority: priority)
-        notifications.scheduleGreenNotification(reminder: reminder)
+        switch priority{
+        case Priority.Green:
+            notifications.scheduleGreenNotification(reminder: reminder)
+        case Priority.Yellow:
+            notifications.scheduleYellowNotification(reminder: reminder)
+        case Priority.Red:
+            notifications.scheduleRedNotification(reminder: reminder)
+        }
         reminderDisk.save(reminder: reminder)
         let reminders = reminderDisk.getAll()
         viewController.showReminders(reminders: reminders)
