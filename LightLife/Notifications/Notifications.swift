@@ -13,7 +13,7 @@ class Notifications: NSObject, UNUserNotificationCenterDelegate {
 
     func scheduleGreenNotification(reminder: Reminder) {
         let content = getContent(title: "GREEN ALERT", message: reminder.title)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 600, repeats: true)
         let request = UNNotificationRequest(identifier: "greenNotification", content: content, trigger: trigger)
         addNotification(request: request)
     }
